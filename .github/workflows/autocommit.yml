@@ -6,7 +6,7 @@ on:
       - main
 
   schedule:
-     - cron: '* * * * *' # Jalankan setiap jam
+     - cron: '*/2 * * * *' # Jalankan setiap jam
 
 jobs:
   auto_commit:
@@ -24,8 +24,8 @@ jobs:
 
       - name: Commit Changes
         run: |
-          git config --local user.name "wisnuary15"
-          git config --local user.email "aryswadanawisnu@gmail.com"
+          git config --local user.name "husains77"
+          git config --local user.email "jamesandersonn70@gmail.com"
           git add -A
 
           arr[0]="🚀 Updated: Auto commit"
